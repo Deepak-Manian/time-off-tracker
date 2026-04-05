@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Where is Loyola Santhosh?</title>
+  <meta name="description"
+    content="Official tracker for the whereabouts of Loyola Santhosh. Last seen: 27 March 2026, 02:56 AM. Run by Deepak & Matheshaww." />
+  <meta property="og:title" content="Where is Loyola Santhosh?" />
+  <meta property="og:description" content="He said he needs time. We are simply... documenting. Officially." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="header-icon.png">
+</head>
+
+<body>
+
+  <div class="noise"></div>
+  <div class="scanlines"></div>
+
+  <header class="header">
+    <div class="header-inner">
+      <span class="header-badge">LIVE TRACKER</span>
+      <span class="header-tag">Deepak &amp; Matheshaww Waiting Committee &mdash; Est. 27 March 2026</span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-eyebrow">CASE FILE #001 &mdash; ACTIVE</div>
+      <h1 class="hero-title">WHERE IS<br><span class="highlight">LOYOLA<br>SANTHOSH?</span></h1>
+      <p class="hero-desc">He said he needs time.<br>So we built a whole website about it. <em>Because why not.</em></p>
+      <div class="hero-last-seen">
+        <div class="dot-blink"></div>
+        <span>Last known signal: <strong>4 Apr 2026 &mdash; 19:02</strong></span>
+      </div>
+    </section>
+
+    <!-- SUBJECT DOSSIER -->
+    <section class="section dossier-section">
+      <div class="section-label">SUBJECT DOSSIER — CLASSIFIED</div>
+      <div class="dossier-card">
+        <div class="dossier-photo-wrap">
+          <img src="LS1.jpeg" alt="Subject: Loyola Santhosh" class="dossier-photo" />
+          <div class="dossier-photo-overlay"></div>
+          <div class="dossier-stamp">MISSING</div>
+        </div>
+        <div class="dossier-info">
+          <div class="dossier-row">
+            <span class="dossier-key">SUBJECT</span>
+            <span class="dossier-val">Loyola Santhosh</span>
+          </div>
+          <div class="dossier-row">
+            <span class="dossier-key">STATUS</span>
+            <span class="dossier-val dossier-val--amber">SIGNAL DETECTED</span>
+          </div>
+          <div class="dossier-row">
+            <span class="dossier-key">LAST SIGNAL</span>
+            <span class="dossier-val">4 Apr 2026 — 19:02</span>
+          </div>
+          <div class="dossier-row">
+            <span class="dossier-key">LAST WORDS</span>
+            <span class="dossier-val dossier-val--italic">"Konjam time kudunga bro. Love you both."</span>
+          </div>
+          <div class="dossier-row">
+            <span class="dossier-key">FILED BY</span>
+            <span class="dossier-val">Deepak &amp; Matheshaww</span>
+          </div>
+          <div class="dossier-row">
+            <span class="dossier-key">CASE</span>
+            <span class="dossier-val">#001 — ACTIVE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTERS -->
+    <section class="section counters-section">
+      <div class="section-label">ELAPSED SINCE LAST TRANSMISSION</div>
+      <div class="counters-grid">
+        <div class="counter-card">
+          <div class="counter-value" id="cnt-days">—</div>
+          <div class="counter-label">Days</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-value" id="cnt-hours">—</div>
+          <div class="counter-label">Hours</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-value" id="cnt-minutes">—</div>
+          <div class="counter-label">Minutes</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-value" id="cnt-seconds">—</div>
+          <div class="counter-label">Seconds</div>
+        </div>
+      </div>
+      <div class="counter-sub">
+        Original silence: <strong>27 Mar 2026, 02:56 AM</strong> &nbsp;|&nbsp; Last response after tracker deployed: <strong>4 Apr
+          2026, 19:02</strong> &nbsp;|&nbsp; Still requesting time.
+      </div>
+    </section>
+
+    <!-- ALERT LEVEL -->
+    <section class="section alert-section">
+      <div class="section-label">FRIENDSHIP ALERT LEVEL</div>
+      <div class="alert-box">
+        <div class="alert-bar-wrap">
+          <div class="alert-bar" id="alert-bar"></div>
+        </div>
+        <div class="alert-status" id="alert-status">CALCULATING...</div>
+        <div class="alert-desc" id="alert-desc">Analysing data...</div>
+      </div>
+    </section>
+
+    <!-- COMMITTEE -->
+    <section class="section committee-section">
+      <div class="section-label">THE WAITING COMMITTEE</div>
+      <div class="committee-grid">
+        <div class="member-card">
+          <div class="member-avatar" style="background:#1a2e4a; color:#5db8f5;">D</div>
+          <div class="member-info">
+            <div class="member-name">Deepak</div>
+            <div class="member-role">Built this website for laughs<br>Has better things to do, chose this instead.</div>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-avatar" style="background:#0d3326; color:#3ecf8e;">M</div>
+          <div class="member-info">
+            <div class="member-name">Matheshaww</div>
+            <div class="member-role">Saw the idea, said "do it"<br>Provided moral support and memes.</div>
+          </div>
+        </div>
+        <div class="member-card missing">
+          <div class="member-avatar" style="background:#2e1a0e; color:#f5a623;">LS</div>
+          <div class="member-info">
+            <div class="member-name">Loyola Santhosh</div>
+            <div class="member-role">The Subject<br><span class="missing-tag">CURRENTLY UNAVAILABLE</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section timeline-section">
+      <div class="section-label">OFFICIAL TIMELINE OF EVENTS</div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+          <div class="tl-content">
+            <div class="tl-date">26 Mar 2026 &mdash; 17:45</div>
+            <div class="tl-title">Last group message from Loyola Santhosh</div>
+            <div class="tl-desc">Normal group chat stuff. Nobody thought twice about it.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+          <div class="tl-content">
+            <div class="tl-date">27 Mar 2026 &mdash; 02:56 AM</div>
+            <div class="tl-title">Final direct message — to Deepak</div>
+            <div class="tl-desc">A 2:56 AM text. Classic Loyola Santhosh move. Said he needs time. Sure bro.
+            </div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot tl-dot--red"></div>
+          <div class="tl-line"></div>
+          <div class="tl-content">
+            <div class="tl-date">27 Mar 2026 &mdash; 02:57 AM</div>
+            <div class="tl-title">Radio silence begins</div>
+            <div class="tl-desc">And just like that — gone. No drama. Just vibes. Deepak and Matheshaww carry on with life.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot tl-dot--amber"></div>
+          <div class="tl-line"></div>
+          <div class="tl-content">
+            <div class="tl-date">4 Apr 2026 &mdash; 12:30</div>
+            <div class="tl-title">Deepak deploys a tracking website &amp; shares it with the subject</div>
+            <div class="tl-desc">Deepak had free time and thought this would be funny. Matheshaww agreed. The link was casually dropped in the chat.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot tl-dot--green"></div>
+          <div class="tl-line"></div>
+          <div class="tl-content">
+            <div class="tl-date">4 Apr 2026 &mdash; 19:02</div>
+            <div class="tl-title">SIGNAL DETECTED &mdash; Loyola Santhosh responds</div>
+            <div class="tl-desc">The tracker worked. Loyola Santhosh saw it and replied: "Miss you to bro 🫡 Konjam time kudunga bro. Love you both 🫡🫡🫡" &mdash; Still needs time apparently. Respect.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot tl-dot--amber"></div>
+          <div class="tl-line tl-line--last"></div>
+          <div class="tl-content">
+            <div class="tl-date">4 Apr 2026 &mdash; 19:03</div>
+            <div class="tl-title">Silence resumes. Timer resets.</div>
+            <div class="tl-desc">Noted. We move. Tracker stays up though &mdash; it's too good to take down.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVIDENCE EXHIBIT -->
+    <section class="section evidence-section">
+      <div class="section-label">EXHIBIT A — LAST KNOWN PHOTOGRAPH</div>
+      <div class="evidence-frame">
+        <div class="evidence-img-wrap">
+          <img src="LS2.jpeg" alt="Last known photograph of Loyola Santhosh" class="evidence-img" />
+          <div class="evidence-glitch"></div>
+          <div class="evidence-scanline"></div>
+        </div>
+        <div class="evidence-meta">
+          <div class="evidence-tag">EVIDENCE PHOTO &mdash; UNCLASSIFIED</div>
+          <div class="evidence-caption">
+            Subject was last photographed in high spirits. No signs of impending radio silence were detected.
+            Image recovered from digital archives.
+          </div>
+          <div class="evidence-details">
+            <span>Source: Open record</span>
+            <span>Classification: LEVEL 0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATIENCE -->
+    <section class="section patience-section">
+      <div class="section-label">PATIENCE METRICS</div>
+      <div class="patience-grid">
+        <div class="patience-card">
+          <div class="patience-val" id="p-drafts">—</div>
+          <div class="patience-label">Conference talks given while waiting</div>
+        </div>
+        <div class="patience-card">
+          <div class="patience-val" id="p-refresh">—</div>
+          <div class="patience-label">Excuses we made up for him because we're nice like that</div>
+        </div>
+        <div class="patience-card">
+          <div class="patience-val" id="p-soon">—</div>
+          <div class="patience-label">Times we said "he'll reply soon" (we stopped counting)</div>
+        </div>
+        <div class="patience-card">
+          <div class="patience-val" id="p-snacks">—</div>
+          <div class="patience-label">Movies watched while vibing (est.)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXCUSE GENERATOR -->
+    <section class="section excuse-section">
+      <div class="section-label">EXCUSE GENERATOR v2.0</div>
+      <div class="excuse-box">
+        <div class="excuse-quote" id="excuse-text">"Loyola Santhosh is fine. He just needs time. As he stated. Deepak
+          and Matheshaww respect this."</div>
+        <div class="excuse-source" id="excuse-source">&mdash; Official Position</div>
+      </div>
+      <button class="excuse-btn" id="excuse-btn">Generate New Excuse for Loyola Santhosh</button>
+    </section>
+
+    <!-- THEORIES -->
+    <section class="section theories-section">
+      <div class="section-label">PEER-REVIEWED THEORIES</div>
+      <div class="theories-grid">
+        <div class="theory-card">
+          <div class="theory-icon">&#x1F9EA;</div>
+          <div class="theory-title">The Time Crystal Theory</div>
+          <div class="theory-desc">Loyola Santhosh entered a quantum time loop at 02:56 AM and cannot exit until the
+            loop collapses. Estimated collapse: unknown. Deepak and Matheshaww are aware of this possibility.</div>
+        </div>
+        <div class="theory-card">
+          <div class="theory-icon">&#x1F3D4;</div>
+          <div class="theory-title">The Hermit Arc Hypothesis</div>
+          <div class="theory-desc">He is on a mountain somewhere, breathing clean air, discovering himself. He will
+            return enlightened with good stories for Deepak and Matheshaww.</div>
+        </div>
+        <div class="theory-card">
+          <div class="theory-icon">&#x1F4F6;</div>
+          <div class="theory-title">The No Signal Excuse</div>
+          <div class="theory-desc">Loyola Santhosh's WiFi, mobile data, and SIM have all simultaneously failed. For 8+
+            days. Deepak and Matheshaww consider this plausible.</div>
+        </div>
+        <div class="theory-card">
+          <div class="theory-icon">&#x1F3AE;</div>
+          <div class="theory-title">The Final Boss Theory</div>
+          <div class="theory-desc">He hit an extremely long final boss battle. He cannot pause. He will text Deepak and
+            Matheshaww the moment he wins. The committee waits patiently.</div>
+        </div>
+        <div class="theory-card">
+          <div class="theory-icon">&#x1F634;</div>
+          <div class="theory-title">The 2:56 AM Sleep Hypothesis</div>
+          <div class="theory-desc">Loyola Santhosh texted Deepak at 02:56 AM, fell immediately asleep, and has been
+            sleeping ever since. A historically impressive nap.</div>
+        </div>
+        <div class="theory-card">
+          <div class="theory-icon">&#x1F4DD;</div>
+          <div class="theory-title">The Perfect Reply Theory</div>
+          <div class="theory-desc">He is crafting the ideal message for Deepak and Matheshaww. It must be flawless.
+            Great art takes time. The committee understands.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRACT -->
+    <section class="section contract-section">
+      <div class="section-label">OFFICIAL DECLARATION ON RECORD</div>
+      <div class="contract-box">
+        <div class="contract-text">
+          Per <strong>Loyola Santhosh's</strong> own declaration on <strong>27 March 2026</strong>, he will contact
+          <strong>Deepak</strong> and <strong>Matheshaww</strong> once he has had his time.
+        </div>
+        <div class="contract-sub">
+          This website exists purely for entertainment purposes.<br>
+          We're not pressed. We just have good internet and free time.
+        </div>
+        <div class="contract-sigs">
+          <div class="sig sig--signed">
+            <div class="sig-svg-wrap">
+              <svg class="sig-svg" viewBox="0 0 220 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="sig-path sig-path--1"
+                  d="M 18 65 L 18 15 C 18 15, 50 12, 52 28 C 54 44, 22 52, 18 55 L 22 65 C 28 55, 40 45, 52 48 C 62 50, 58 58, 68 52 C 78 46, 75 56, 88 52 C 98 49, 92 58, 108 54 C 118 51, 115 58, 130 52 C 140 48, 150 56, 165 50 C 175 46, 185 54, 195 50" />
+                <path class="sig-path sig-path--1 sig-underline" d="M 12 72 C 50 68, 130 64, 200 68" />
+              </svg>
+            </div>
+            <div class="sig-line"></div>
+            <div class="sig-name">Deepak</div>
+            <div class="sig-role">The guy who built this for fun</div>
+          </div>
+          <div class="sig sig--signed">
+            <div class="sig-svg-wrap">
+              <svg class="sig-svg" viewBox="0 0 230 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="sig-path sig-path--2"
+                  d="M 12 65 L 12 15 L 28 45 L 44 15 L 44 60 C 50 52, 56 48, 64 50 C 72 52, 68 58, 80 52 C 90 47, 86 56, 100 52 C 110 49, 106 56, 120 52 C 130 48, 135 56, 148 50 C 158 46, 162 54, 175 50 C 185 47, 190 54, 205 48" />
+                <path class="sig-path sig-path--2 sig-underline" d="M 8 72 C 50 68, 140 64, 210 68" />
+              </svg>
+            </div>
+            <div class="sig-line"></div>
+            <div class="sig-name">Matheshaww</div>
+            <div class="sig-role">Co-signatory</div>
+          </div>
+          <div class="sig sig--pending">
+            <div class="sig-svg-wrap">
+              <svg class="sig-svg" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="sig-path sig-path--pending"
+                  d="M 70 55 C 80 50, 90 35, 100 40 C 110 45, 95 55, 105 55 C 115 55, 120 40, 130 45" />
+                <text class="sig-question" x="94" y="48" text-anchor="middle">?</text>
+              </svg>
+            </div>
+            <div class="sig-line sig-line--empty"></div>
+            <div class="sig-name">Loyola Santhosh</div>
+            <div class="sig-role">Pending. Still pending.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-title">WHERE IS LOYOLA SANTHOSH?</div>
+      <div class="footer-text">
+        Made with boredom, sarcasm, and zero desperation by <strong>Deepak</strong>.<br>
+        Co-signed by <strong>Matheshaww</strong>, who thought it was hilarious.<br>
+        <em>Loyola Santhosh, this is your legacy now. You did this to yourself.</em>
+      </div>
+      <div class="footer-copy">&copy; 2026 &mdash; The Official Loyola Santhosh Waiting Committee</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
