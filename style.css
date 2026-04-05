@@ -455,6 +455,97 @@ body {
   line-height: 1.6;
 }
 
+/* --- Reset Log --- */
+.resetlog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.resetlog-stat {
+  background: var(--bg2);
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  border-right: 1px solid var(--border);
+  transition: background 0.2s;
+}
+
+.resetlog-stat:last-child { border-right: none; }
+.resetlog-stat:hover { background: var(--bg3); }
+
+.resetlog-val {
+  font-family: var(--display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--amber);
+  line-height: 1;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.resetlog-label {
+  font-size: 12px;
+  color: var(--text);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.resetlog-sub {
+  font-size: 11px;
+  color: var(--text3);
+  line-height: 1.5;
+}
+
+.resetlog-history {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg2);
+  overflow: hidden;
+}
+
+.resetlog-history-label {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--text3);
+  text-transform: uppercase;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg3);
+}
+
+.resetlog-entry {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  font-size: 12px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s;
+}
+
+.resetlog-entry:last-child { border-bottom: none; }
+.resetlog-entry:hover { background: var(--bg3); }
+
+.resetlog-num {
+  font-family: var(--display);
+  font-size: 1rem;
+  color: var(--amber);
+  flex-shrink: 0;
+}
+
+.resetlog-date {
+  color: var(--text2);
+  flex-shrink: 0;
+  min-width: 160px;
+}
+
+.resetlog-reason {
+  color: var(--text);
+}
+
 /* --- Excuse Generator --- */
 .excuse-box {
   border: 1px solid var(--border);
@@ -940,4 +1031,10 @@ body {
   .evidence-img-wrap { max-height: 300px; }
   .evidence-meta { padding: 1.25rem; }
   .evidence-details { flex-direction: column; gap: 0.5rem; }
+
+  .resetlog-grid { grid-template-columns: 1fr; }
+  .resetlog-stat { border-right: none; border-bottom: 1px solid var(--border); }
+  .resetlog-stat:last-child { border-bottom: none; }
+  .resetlog-entry { flex-direction: column; gap: 0.4rem; }
+  .resetlog-date { min-width: auto; }
 }

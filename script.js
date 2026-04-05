@@ -89,6 +89,13 @@ function update() {
   set('p-refresh', (days * 8).toLocaleString());
   set('p-soon', days * 5);
   set('p-snacks', Math.floor(days * 4));
+
+  /* Reset log — total from original silence */
+  const origDiffMs = now - ORIGINAL_SILENCE;
+  const origTotalHours = Math.floor(origDiffMs / (1000 * 60 * 60));
+  const origTotalDays = Math.floor(origDiffMs / (1000 * 60 * 60 * 24));
+  set('rl-total-hours', origTotalHours.toLocaleString());
+  set('rl-total-days', origTotalDays);
 }
 
 /* ---------- Init ---------- */
